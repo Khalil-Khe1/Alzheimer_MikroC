@@ -1,0 +1,29 @@
+main
+	__CC2DW
+		____DoICP
+	ADC_Init
+	strcpy
+	EEPROM_Write
+	Lcd_Init
+		Delay_5500us
+		Delay_1us
+	Lcd_Cmd
+		Delay_1us
+		Delay_5500us
+		Delay_50us
+	ADC_Read
+		Delay_22us
+	ByteToStr
+		Div_8X8_U
+	Lcd_Out
+		Lcd_Cmd
+			Delay_1us
+			Delay_5500us
+			Delay_50us
+		Lcd_Chr_CP
+			Lcd_Cmd
+				Delay_1us
+				Delay_5500us
+				Delay_50us
+	EEPROM_Read
+interrupt
